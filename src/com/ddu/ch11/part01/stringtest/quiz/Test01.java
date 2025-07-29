@@ -7,9 +7,9 @@ public class Test01 {
 		String str = "abcabcabc";
 		int count = 0;
 		for (int i = 0; i < str.length(); i++) {	
-			if(str.indexOf("ab") != -1)
-			 count++;
-			}System.out.println(str + "문자열 내에 'ab'가 " + count + "번 들어갑니다");
+			if(str.charAt(i) == 'a' && str.charAt(i+1) == 'b') { 
+				count++;
+			}		
+		}System.out.println(str + "문자열 내에 'ab'가 " + count + "번 들어갑니다");
 	}
-
 }
